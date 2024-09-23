@@ -22,8 +22,8 @@
         compatible = "zmk,conditional-layers";
 
         adjust_layer {
-            if-layers = <LOWER RAISE>;
-            then-layer = <ADJUST>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 
@@ -55,11 +55,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESC         &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                             &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp K_SLEEP
-&kp TAB         &kp Q   &kp W     &kp E     &kp R      &kp T                              &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSPC
-&kp LEFT_SHIFT  &kp A   &kp S     &kp D     &kp F      &kp G                              &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LCTRL       &kp Z   &kp X     &kp C     &kp V      &kp B      &kp LC(L)    &kp LC(G)  &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                        &kp LGUI  &kp LALT  &kp LCTRL  &mo LOWER  &kp SPACE    &kp RET    &mo RAISE  &kp RCTRL  &kp RALT   &kp RGUI
+&kp ESC         &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                          &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &to 4
+&kp TAB         &kp Q   &kp W     &kp E     &kp R      &kp T                           &kp Y   &kp U      &kp I      &kp O     &kp P     &kp BSPC
+&kp LEFT_SHIFT  &kp A   &kp S     &kp D     &kp F      &kp G                           &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LCTRL       &kp Z   &kp X     &kp C     &kp V      &kp B   &kp LC(L)    &kp LC(G)  &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+                        &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &kp SPACE    &kp RET    &mo 2   &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT LEFT>, <&inc_dec_kp UP DOWN>;
@@ -125,6 +125,18 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        mac {
+            bindings = <
+&kp ESC         &kp N1  &kp N2     &kp N3    &kp N4    &kp N5                          &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &to 0
+&kp TAB         &kp Q   &kp W      &kp E     &kp R     &kp T                           &kp Y   &kp U      &kp I      &kp O     &kp P     &kp BSPC
+&kp LEFT_SHIFT  &kp A   &kp S      &kp D     &kp F     &kp G                           &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LCTRL       &kp Z   &kp X      &kp C     &kp V     &kp B   &kp LC(L)    &kp LC(G)  &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+                        &kp LCTRL  &kp LALT  &kp LCMD  &mo 1   &kp SPACE    &kp RET    &mo 2   &kp RCTRL  &kp RALT   &kp RGUI
+            >;
+
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>, <&inc_dec_kp UP DOWN>;
         };
     };
 };

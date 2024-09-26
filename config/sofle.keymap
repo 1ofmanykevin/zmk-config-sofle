@@ -113,11 +113,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3       &bt BT_SEL 4                           &trans                 &trans                  &trans        &trans     &trans   &trans
-&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                        &windows_desktop_left  &windows_desktop_right  &trans        &trans     &trans   &trans
-&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &kp K_PLAY_PAUSE   &kp CLCK                               &kp LC(LEFT_ARROW)     &kp LC(RIGHT)           &kp UP_ARROW  &trans     &kp DEL  &kp BSPC
-&kp K_UNDO  &kp K_REDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE        &trans           &trans    &kp C_MUTE  &trans                 &kp LEFT_ARROW          &kp DOWN      &kp RIGHT  &trans   &trans
-                          &trans        &trans        &trans             &trans           &trans    &trans      &trans                 &trans                  &trans        &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3       &bt BT_SEL 4                                   &trans                 &trans                  &trans        &trans     &trans   &trans
+&trans      &kp INS       &kp PSCRN     &kp K_CMENU   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                                &windows_desktop_left  &windows_desktop_right  &trans        &trans     &trans   &trans
+&trans      &kp LALT      &kp LCTRL     &kp LSHFT     &kp K_PLAY_PAUSE   &kp CLCK                                       &kp LC(LEFT_ARROW)     &kp LC(RIGHT)           &kp UP_ARROW  &trans     &kp DEL  &kp BSPC
+&kp K_UNDO  &kp K_REDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE        &trans           &trans            &kp C_MUTE  &trans                 &kp LEFT_ARROW          &kp DOWN      &kp RIGHT  &trans   &trans
+                          &trans        &trans        &trans             &trans           &kp UNDERSCORE    &trans      &trans                 &trans                  &trans        &trans
             >;
 
             sensor-bindings =

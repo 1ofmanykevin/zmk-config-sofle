@@ -92,11 +92,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &kp NUMBER_6  &kp NUMBER_7     &kp NUMBER_8     &kp N9           &kp N0                       &kp F1                &kp F2                 &kp F3      &kp F4        &kp F5           &kp F6
-&trans  &trans        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans                       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE    &kp EQUAL     &kp EXCLAMATION  &kp TILDE
-&trans  &trans        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans                       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS   &kp PLUS      &kp LESS_THAN    &kp GREATER_THAN
-&trans  &trans        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans    &trans     &kp LBKT              &kp RBKT               &kp SLASH   &kp ASTERISK  &kp PERCENT      &kp BACKSLASH
-                      &trans           &trans           &trans           &trans  &trans    &kp ENTER  &kp UNDERSCORE        &kp COMMA              &kp PERIOD  &kp GRAVE
+&trans  &kp NUMBER_6  &kp NUMBER_7     &kp NUMBER_8     &kp N9           &kp N0                            &kp F1                &kp F2                 &kp F3      &kp F4        &kp F5           &kp F6
+&trans  &trans        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans                            &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE    &kp EQUAL     &kp EXCLAMATION  &kp TILDE
+&trans  &trans        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans                            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS   &kp PLUS      &kp LESS_THAN    &kp GREATER_THAN
+&trans  &trans        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &trans    &trans          &kp LBKT              &kp RBKT               &kp SLASH   &kp ASTERISK  &kp PERCENT      &kp BACKSLASH
+                      &trans           &trans           &trans           &trans  &trans    &kp UNDERSCORE  &kp MINUS             &kp COMMA              &kp PERIOD  &kp GRAVE
             >;
 
             sensor-bindings =
